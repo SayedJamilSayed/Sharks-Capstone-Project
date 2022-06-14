@@ -1,4 +1,4 @@
-package step.definitions;
+package step.definition;
 
 import core.Base;
 import io.cucumber.java.After;
@@ -25,7 +25,7 @@ public class Initializer extends Base {
 	@After
 	public void afterHooks(Scenario scenario) {
 		tearDown();
-		logger.info("Scenario " +scenario.getName() + " " +scenario.getStatus());
+		logger.info("Scenario " +scenario.getName() + "" +scenario.getStatus());
 		
 	}
 
